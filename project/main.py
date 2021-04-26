@@ -100,7 +100,7 @@ class Window_for_generate(QtWidgets.QMainWindow):
                                    "background-color: #976EED;\n"
                                    "color: rgba(255, 255, 255, 1);\n"
                                    "")
-            entry[n].setMaxLength(150)
+            entry[n].setMaxLength(350)
             entry[n].setAlignment(QtCore.Qt.AlignBottom | QtCore.Qt.AlignLeading | QtCore.Qt.AlignLeft)
             entry[n].setPlaceholderText(f'{n+1}. Адрес документа')
 
