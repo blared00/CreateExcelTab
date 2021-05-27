@@ -25,7 +25,7 @@ class Ui_MainWindow(object):
 "left: 603px;\n"
 "top: 141px;\n"
 "border-radius: 16px;\n"
-"background-color: #976EED;\n"
+"background-color: #003366;\n"
 "")
         MainWindow.setInputMethodHints(QtCore.Qt.ImhNone)
         self.centralwidget = QtWidgets.QWidget(MainWindow)

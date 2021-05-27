@@ -40,7 +40,7 @@ width: 50px;
 left: 603px;
 top: 141px;
 border-radius: 16px;
-background-color: #976EED;
+background-color: #003366;
 </string>
   </property>
   <property name="inputMethodHints">
@@ -62,9 +62,9 @@ background-color: #976EED;
       <colorrole role="Button">
        <brush brushstyle="SolidPattern">
         <color alpha="255">
-         <red>151</red>
-         <green>110</green>
-         <blue>237</blue>
+         <red>0</red>
+         <green>51</green>
+         <blue>102</blue>
         </color>
        </brush>
       </colorrole>
@@ -107,18 +107,18 @@ background-color: #976EED;
       <colorrole role="Base">
        <brush brushstyle="SolidPattern">
         <color alpha="255">
-         <red>151</red>
-         <green>110</green>
-         <blue>237</blue>
+         <red>0</red>
+         <green>51</green>
+         <blue>102</blue>
         </color>
        </brush>
       </colorrole>
       <colorrole role="Window">
        <brush brushstyle="SolidPattern">
         <color alpha="255">
-         <red>151</red>
-         <green>110</green>
-         <blue>237</blue>
+         <red>0</red>
+         <green>51</green>
+         <blue>102</blue>
         </color>
        </brush>
       </colorrole>
@@ -154,9 +154,9 @@ background-color: #976EED;
       <colorrole role="Button">
        <brush brushstyle="SolidPattern">
         <color alpha="255">
-         <red>151</red>
-         <green>110</green>
-         <blue>237</blue>
+         <red>0</red>
+         <green>51</green>
+         <blue>102</blue>
         </color>
        </brush>
       </colorrole>
@@ -199,18 +199,18 @@ background-color: #976EED;
       <colorrole role="Base">
        <brush brushstyle="SolidPattern">
         <color alpha="255">
-         <red>151</red>
-         <green>110</green>
-         <blue>237</blue>
+         <red>0</red>
+         <green>51</green>
+         <blue>102</blue>
         </color>
        </brush>
       </colorrole>
       <colorrole role="Window">
        <brush brushstyle="SolidPattern">
         <color alpha="255">
-         <red>151</red>
-         <green>110</green>
-         <blue>237</blue>
+         <red>0</red>
+         <green>51</green>
+         <blue>102</blue>
         </color>
        </brush>
       </colorrole>
@@ -246,9 +246,9 @@ background-color: #976EED;
       <colorrole role="Button">
        <brush brushstyle="SolidPattern">
         <color alpha="255">
-         <red>151</red>
-         <green>110</green>
-         <blue>237</blue>
+         <red>0</red>
+         <green>51</green>
+         <blue>102</blue>
         </color>
        </brush>
       </colorrole>
@@ -291,18 +291,18 @@ background-color: #976EED;
       <colorrole role="Base">
        <brush brushstyle="SolidPattern">
         <color alpha="255">
-         <red>151</red>
-         <green>110</green>
-         <blue>237</blue>
+         <red>0</red>
+         <green>51</green>
+         <blue>102</blue>
         </color>
        </brush>
       </colorrole>
       <colorrole role="Window">
        <brush brushstyle="SolidPattern">
         <color alpha="255">
-         <red>151</red>
-         <green>110</green>
-         <blue>237</blue>
+         <red>0</red>
+         <green>51</green>
+         <blue>102</blue>
         </color>
        </brush>
       </colorrole>
@@ -359,7 +359,7 @@ background-color: #976EED;
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>10</y>
+      <y>20</y>
       <width>911</width>
       <height>35</height>
      </rect>
@@ -379,9 +379,9 @@ background-color: #976EED;
        <colorrole role="Button">
         <brush brushstyle="SolidPattern">
          <color alpha="255">
-          <red>151</red>
-          <green>110</green>
-          <blue>237</blue>
+          <red>0</red>
+          <green>51</green>
+          <blue>102</blue>
          </color>
         </brush>
        </colorrole>
@@ -406,18 +406,18 @@ background-color: #976EED;
        <colorrole role="Base">
         <brush brushstyle="SolidPattern">
          <color alpha="255">
-          <red>151</red>
-          <green>110</green>
-          <blue>237</blue>
+          <red>0</red>
+          <green>51</green>
+          <blue>102</blue>
          </color>
         </brush>
        </colorrole>
        <colorrole role="Window">
         <brush brushstyle="SolidPattern">
          <color alpha="255">
-          <red>151</red>
-          <green>110</green>
-          <blue>237</blue>
+          <red>0</red>
+          <green>51</green>
+          <blue>102</blue>
          </color>
         </brush>
        </colorrole>
@@ -444,9 +444,9 @@ background-color: #976EED;
        <colorrole role="Button">
         <brush brushstyle="SolidPattern">
          <color alpha="255">
-          <red>151</red>
-          <green>110</green>
-          <blue>237</blue>
+          <red>0</red>
+          <green>51</green>
+          <blue>102</blue>
          </color>
         </brush>
        </colorrole>
@@ -471,18 +471,18 @@ background-color: #976EED;
        <colorrole role="Base">
         <brush brushstyle="SolidPattern">
          <color alpha="255">
-          <red>151</red>
-          <green>110</green>
-          <blue>237</blue>
+          <red>0</red>
+          <green>51</green>
+          <blue>102</blue>
          </color>
         </brush>
        </colorrole>
        <colorrole role="Window">
         <brush brushstyle="SolidPattern">
          <color alpha="255">
-          <red>151</red>
-          <green>110</green>
-          <blue>237</blue>
+          <red>0</red>
+          <green>51</green>
+          <blue>102</blue>
          </color>
         </brush>
        </colorrole>
@@ -509,9 +509,9 @@ background-color: #976EED;
        <colorrole role="Button">
         <brush brushstyle="SolidPattern">
          <color alpha="255">
-          <red>151</red>
-          <green>110</green>
-          <blue>237</blue>
+          <red>0</red>
+          <green>51</green>
+          <blue>102</blue>
          </color>
         </brush>
        </colorrole>
@@ -536,18 +536,18 @@ background-color: #976EED;
        <colorrole role="Base">
         <brush brushstyle="SolidPattern">
          <color alpha="255">
-          <red>151</red>
-          <green>110</green>
-          <blue>237</blue>
+          <red>0</red>
+          <green>51</green>
+          <blue>102</blue>
          </color>
         </brush>
        </colorrole>
        <colorrole role="Window">
         <brush brushstyle="SolidPattern">
          <color alpha="255">
-          <red>151</red>
-          <green>110</green>
-          <blue>237</blue>
+          <red>0</red>
+          <green>51</green>
+          <blue>102</blue>
          </color>
         </brush>
        </colorrole>
@@ -578,6 +578,53 @@ background-color: #976EED;
     </property>
     <property name="alignment">
      <set>Qt::AlignBottom|Qt::AlignHCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>620</x>
+      <y>480</y>
+      <width>291</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Kharkiv Tone</family>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: #ffffff;</string>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;© НЭТЗ 2021 Все права защищены&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>10</y>
+      <width>51</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Kharkiv Tone</family>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: #ffffff;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>../img/Ellipse_6.png</pixmap>
     </property>
    </widget>
   </widget>

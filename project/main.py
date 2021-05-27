@@ -75,8 +75,11 @@ class Window_for_generate(QtWidgets.QMainWindow):
             for n in range(num):
                 if not entry[n].text() or not count_cell[n].text() or not title_cell[n].text():
                     continue
-                files_df.append({'sourse': entry[n].text().replace('/', '\\'), 'num_yach': int(count_cell[n].text()),
-                                 'title_cell': title_cell[n].text()})
+                try:
+                    files_df.append({'sourse': entry[n].text().replace('/', '\\'), 'num_yach': int(count_cell[n].text()),
+                                    'title_cell': title_cell[n].text()})
+                except:
+                    QMessageBox.critical(self, "Ошибка ", "Некоторые поля заполнены не верно", QMessageBox.Ok)
             #  files_df.append(entry[n].text())
 
             if files_df and len(files_df)>1:
@@ -97,7 +100,7 @@ class Window_for_generate(QtWidgets.QMainWindow):
             entry[n].setFont(font_entry)
             entry[n].setStyleSheet("\n"
                                    "border-bottom: 2px solid white;\n"
-                                   "background-color: #976EED;\n"
+                                   "background-color: #003366;\n"
                                    "color: rgba(255, 255, 255, 1);\n"
                                    "")
             entry[n].setMaxLength(350)
@@ -123,7 +126,7 @@ class Window_for_generate(QtWidgets.QMainWindow):
             count_cell[n].setFont(font_entry)
             count_cell[n].setStyleSheet("\n"
                                         "border-bottom: 2px solid white;\n"
-                                        "background-color: #976EED;\n"
+                                        "background-color: #003366;\n"
                                         "color: rgba(255, 255, 255, 0.82);\n"
                                         "")
             count_cell[n].setMaxLength(2)
@@ -140,7 +143,7 @@ class Window_for_generate(QtWidgets.QMainWindow):
             title_cell[n].setFont(font_entry)
             title_cell[n].setStyleSheet("\n"
                                         "border-bottom: 2px solid white;\n"
-                                        "background-color: #976EED;\n"
+                                        "background-color: #003366;\n"
                                         "color: rgba(255, 255, 255, 0.82);\n"
                                         "")
             title_cell[n].setMaxLength(15)
@@ -155,13 +158,11 @@ class Window_for_generate(QtWidgets.QMainWindow):
                                                                 'Excel-файлы (*.xlsx);;Все файлы(*.*)')
                 entry[n].insert(file)
 
-        # num = 5
+
         for n in range(num):
             create_entry(n)
 
 
-            # for n in range(5):
-            #     print(entry[n].text())
 
         btn_itog = QPushButton(self.w_roots)
         btn_itog.setGeometry(QtCore.QRect(55, 444, 300, 48))
@@ -175,12 +176,7 @@ class Window_for_generate(QtWidgets.QMainWindow):
 
 
 
-        #     print('Все заебок')
-        # else:
-        #     print('Залупа')
-        # if num >5:
-        #     self.w_root.resize(914, 844)
-        # self.w_root.center()
+
         self.setCentralWidget(self.centralWidget())
         self.w_roots.show()
 

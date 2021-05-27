@@ -45,7 +45,7 @@
  [],
  False,
  False,
- 1619418593,
+ 1622092092,
  [('runw.exe',
    'c:\\users\\v.yudintsev\\pycharmprojects\\createexceltab\\venv\\lib\\site-packages\\PyInstaller\\bootloader\\Windows-32bit\\runw.exe',
    'EXECUTABLE')])
