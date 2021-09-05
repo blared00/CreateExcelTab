@@ -5,8 +5,6 @@ from project.Sorting import create_itog
 
 import sys
 
-from project.mydesigne import Ui_MainWindow
-
 entry = []
 count_cell = []
 title_cell = []
@@ -29,11 +27,12 @@ class Window_for_generate(QtWidgets.QMainWindow):
             try:
                 self.sets(int(text))
             except:
-                ret = QMessageBox.critical(self, "Ошибка ", "Необходимо ввести целое число\nколичества типов ячеек", QMessageBox.Ok)
-                if ret==QMessageBox.Ok:
+                ret = QMessageBox.critical(self, "Ошибка ", "Необходимо ввести целое число\nколичества типов ячеек",
+                                           QMessageBox.Ok)
+                if ret == QMessageBox.Ok:
                     self.showDialog()
 
-    def sets(self,num):
+    def sets(self, num):
         _translate = QtCore.QCoreApplication.translate
         self.w_roots = uic.loadUi('resources/ui/Excel_table.ui')
         layout = QtWidgets.QVBoxLayout(self.w_roots)
@@ -42,7 +41,7 @@ class Window_for_generate(QtWidgets.QMainWindow):
         layout.addWidget(self.scrollArea)
 
         self.w_root = QtWidgets.QWidget()
-        self.w_root.setGeometry(0, 0, 900, num*66)
+        self.w_root.setGeometry(0, 0, 900, num * 66)
         self.scrollArea.setWidget(self.w_root)
 
         font_btn = QtGui.QFont()
@@ -67,7 +66,7 @@ class Window_for_generate(QtWidgets.QMainWindow):
                     if mes:
                         QMessageBox.information(Window, "Выполнено", "Сводная таблица успешно создана", QMessageBox.Ok)
             except Exception as e:
-                print(e)
+                QMessageBox.critical(Window, "Ошибка чтения", "Ошибка чтения файла", QMessageBox.Ok)
 
         def read_files_path():
             files_df = []
@@ -76,16 +75,18 @@ class Window_for_generate(QtWidgets.QMainWindow):
                 if not entry[n].text() or not count_cell[n].text() or not title_cell[n].text():
                     continue
                 try:
-                    files_df.append({'sourse': entry[n].text().replace('/', '\\'), 'num_yach': int(count_cell[n].text()),
-                                    'title_cell': title_cell[n].text()})
+                    files_df.append(
+                        {'sourse': entry[n].text().replace('/', '\\'), 'num_yach': int(count_cell[n].text()),
+                         'title_cell': title_cell[n].text()})
                 except:
                     QMessageBox.critical(self, "Ошибка ", "Некоторые поля заполнены не верно", QMessageBox.Ok)
-            #  files_df.append(entry[n].text())
 
-            if files_df and len(files_df)>1:
+            if files_df and len(files_df) > 1:
                 return files_df
             if len(files_df) == 1:
-                QMessageBox.critical(self, "Ошибка ", "Выбран один Excel-фаил\nДля работы программы необходимо больше одного фаила", QMessageBox.Ok)
+                QMessageBox.critical(self, "Ошибка ",
+                                     "Выбран один Excel-фаил\nДля работы программы необходимо больше одного фаила",
+                                     QMessageBox.Ok)
             else:
                 QMessageBox.critical(self, "Ошибка ", "Некоторые поля не заполнены", QMessageBox.Ok)
 
@@ -105,7 +106,7 @@ class Window_for_generate(QtWidgets.QMainWindow):
                                    "")
             entry[n].setMaxLength(350)
             entry[n].setAlignment(QtCore.Qt.AlignBottom | QtCore.Qt.AlignLeading | QtCore.Qt.AlignLeft)
-            entry[n].setPlaceholderText(f'{n+1}. Адрес документа')
+            entry[n].setPlaceholderText(f'{n + 1}. Адрес документа')
 
             btn.append(QPushButton(self.w_root))
             btn[n].setGeometry(610, 66 * n, 50, 32)
@@ -158,11 +159,8 @@ class Window_for_generate(QtWidgets.QMainWindow):
                                                                 'Excel-файлы (*.xlsx);;Все файлы(*.*)')
                 entry[n].insert(file)
 
-
         for n in range(num):
             create_entry(n)
-
-
 
         btn_itog = QPushButton(self.w_roots)
         btn_itog.setGeometry(QtCore.QRect(55, 444, 300, 48))
@@ -173,9 +171,6 @@ class Window_for_generate(QtWidgets.QMainWindow):
         btn_itog.setFont(font_btn_itog)
 
         btn_itog.clicked.connect(lambda: save_excel(self))
-
-
-
 
         self.setCentralWidget(self.centralWidget())
         self.w_roots.show()
@@ -208,7 +203,6 @@ QScrollBar::sub-line:vertical {
     subcontrol-origin: margin;
 }
 """)
-
 
 app = QApplication([sys.argv])
 app.setWindowIcon(QtGui.QIcon('resources/img/icon.ico'))
